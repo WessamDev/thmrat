@@ -1,0 +1,2 @@
+# thmrat
+tajweed fro wp
