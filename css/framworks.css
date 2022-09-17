@@ -1,0 +1,118 @@
+
+/*
+========================
+ Start Global Rules Stylesh 
+========================
+*/
+:root {
+      
+  --main-color:#8e40c5;
+  --prim-color:#ad77da;
+  --second-color:#fcfcfc;
+  --p-color:#777;
+  --trans:0.3 all ease-in-out;
+
+
+}
+* {
+  box-sizing: border-box; 
+  margin:0;
+  padding:0;
+}
+
+html {scroll-behavior: smooth;}
+
+body{
+  background:#eee;
+  font-family: sans-serif, 'Courier New', Courier, monospace;
+  position:relative;
+  min-height: 100vh;
+  padding-bottom:613px;
+ 
+}
+
+ul{list-style:none;}
+a{text-decoration:none; color:#fff;}
+h1,h2,h3,h4,h5,h6 { margin:0;}
+.clearfix {clear: both;}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  .container { width:750px; } }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  .container {width:970px; } }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { .container { width:1170px; } }
+
+
+
+/* Start My Components  */
+
+.head-component { color:#333; position:relative; margin-bottom:30px;}
+.head-component h2.title { font-size:40px; text-align: right;}
+.head-component h2.title::before,
+.head-component h2.title::after{ 
+content: "";
+height: 7px;
+background-color: var(--main-color);
+position: absolute;
+}
+
+.head-component h2.title::before { width: 100px; bottom: -10px; right:0;}
+.head-component h2.title::after { width: 150px; bottom: -30px; right:0;}
+
+.line-break {
+  margin:10px 0;
+  height: 1px;
+  opacity: 0.8;
+  background-color: #eeeaea;
+  border:0;
+}
+
+/* End My Components  */
+
+/* End Global Rules */
+
+
+
+/*  My Framework wessam */
+.txt-center {
+  text-align:center
+}
+
+.grid-3 {
+ display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  row-gap: 30px;
+  column-gap: 10%;
+}
+
+.grid-4 {
+  display:grid;
+   grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+   row-gap: 30px;
+   column-gap: 10px;
+ }
+
+
+ .grid-2{
+  display:grid;
+  grid-template-columns: repeat(2, 65% 30%);
+  column-gap: 5%;
+  row-gap:30px;
+ }
+
+ .flex-box {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+ }
